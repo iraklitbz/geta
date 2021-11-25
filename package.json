@@ -1,9 +1,9 @@
 {
   "name": "gatsby-starter-codyhouse",
   "private": true,
-  "description": "A simple starter for Gatsby with the CodyFrame CSS framework",
+  "description": "starter de codyhouse gatsby",
   "version": "1.0.0",
-  "author": "Paul Eiche <paul@boldoak.design>",
+  "author": "iraklitbz@gmail.com",
   "dependencies": {
     "autoprefixer": "^10.4.0",
     "codyhouse-framework": "^3.0.3",
@@ -42,9 +42,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/peiche/gatsby-starter-codyhouse"
-  },
-  "bugs": {
-    "url": "https://github.com/peiche/gatsby-starter-codyhouse/issues"
+    "url": "https://github.com/iraklitbz/gatsby-starter"
   }
 }

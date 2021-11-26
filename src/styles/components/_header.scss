@@ -373,7 +373,7 @@
   padding: var(--space-xs) 0;
 
   &:hover,
-  &[aria-current="page"] {
+  &.active {
     color: var(--color-primary);
   }
 }

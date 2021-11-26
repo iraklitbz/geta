@@ -1,12 +1,25 @@
 import React from "react";
-import Header from "../components/Header/Header";
-import { useEffect } from "react";
+import MainLayout from "../layouts/MainLayout";
+/*Sections*/
+import List from "../components/Sections/List/List";
+import StickyHero from "../components/Sections/StickyHero/StickyHero";
+import Text from "../components/Sections/Text/Text";
+import Hero from "../components/Sections/Hero/Hero";
+import HeroText from "../components/Sections/HeroText/HeroText";
+import BlogHome from "../components/Sections/BlogHome/BlogHome";
+
 const IndexPage = () => {
-  useEffect(() => {
-    document.getElementsByTagName("html")[0].className += " js";
-  }, []);
+ 
   return (
-    <Header />
+    <MainLayout>
+      <Hero />
+      <HeroText />
+      <BlogHome />
+      <List />
+      <StickyHero />
+      <Text />
+    </MainLayout>
+
   )
 }
 

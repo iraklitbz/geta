@@ -542,3 +542,24 @@ html:not(.js) {
     transform: translateY(0);
   }
 }
+
+
+.hide-nav {
+  --hide-nav-transition-duration: 0.3s;
+  position: sticky !important;
+  top: 0;
+  will-change: transform;
+  transition: transform var(--hide-nav-transition-duration), background-color var(--hide-nav-transition-duration);
+}
+
+.hide-nav--fixed {
+  background-color: transparent;
+}
+
+.hide-nav--has-bg {
+  background-color: var(--color-bg);
+}
+
+.hide-nav--off-canvas { // main header is off-canvas
+  // add off-canvas custom style (if any)
+}

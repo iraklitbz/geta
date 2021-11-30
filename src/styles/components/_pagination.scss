@@ -1,0 +1,144 @@
+
+@use '../base' as *;
+
+
+.pagination {}
+
+.pagination__list > li {
+  display: inline-block; // flex fallback
+}
+
+// --split - push first + last item to sides
+.pagination--split {
+  .pagination__list {
+    width: 100%;
+
+    > *:first-child {
+        margin-right: auto;
+    }
+
+    > *:last-child {
+        margin-left: auto;
+    }
+  }
+}
+
+.pagination__item {
+  display: inline-block; // flex fallback
+  display: inline-flex;
+  height: 100%;
+  align-items: center;
+  padding: var(--space-xs) calc(1.355 * var(--space-xs));
+
+  white-space: nowrap;
+  line-height: 1;
+  border-radius: var(--radius-md);
+
+  text-decoration: none;
+  color: var(--color-contrast-high);
+  @include fontSmooth;
+
+  will-change: transform;
+  transition: .2s;
+
+  &:hover:not(.active):not(.pagination__item--ellipsis) {
+    background-color: alpha(var(--color-contrast-higher), 0.1);
+  }
+
+  &:active {
+    transform: translateY(2px);
+  }
+  &.active {
+    background-color: var(--color-contrast-higher);
+    color: var(--color-bg);
+    box-shadow: var(--shadow-sm);
+    
+  }
+}
+
+
+
+.pagination__item--disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+// --jumper
+.pagination__jumper {
+  .form-control {
+    width: 3em;
+    margin-right: var(--space-xs);
+  }
+
+  em {
+    flex-shrink: 0;
+    white-space: nowrap;
+  }
+}
+
+.story-v2 {}
+
+.story-v2__meta {
+  a {
+    color: var(--color-contrast-high);
+    transition: .2s;
+
+    &:hover {
+      color: var(--color-primary);
+    }
+  }
+
+  span[role="separator"] {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    vertical-align: middle;
+    background-color: var(--color-contrast-low);
+    border-radius: 50%;
+    margin: 0 var(--space-xxxs);
+  }
+}
+
+.story-v2__headline {
+  a {
+    color: var(--color-contrast-higher);
+    text-decoration: underline;
+    background-repeat: no-repeat;
+    background-image: linear-gradient(transparent 50%, alpha(var(--color-primary), 0.2) 50%);
+    background-size: 0% 100%;
+    will-change: background-size;
+    transition: background-size .3s var(--ease-in-out);
+
+    &:hover {
+      background-size: 100% 100%;
+    }
+  }
+}
+
+.story-v2__excerpt {
+  color: var(--color-contrast-medium);
+}
+
+.story-v2__img {
+  display: block;
+  transition: opacity .2s;
+
+  &:hover {
+    opacity: 0.85;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+// --featured
+@include breakpoint(md) {
+  .story-v2--featured {
+    .story-v2__excerpt {
+      max-width: 70%;
+      margin-left: auto;
+    }
+  }
+}

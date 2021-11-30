@@ -1,12 +1,14 @@
 import React from "react";
 import { Link } from "gatsby";
+import { useIntl } from "gatsby-plugin-intl";
 const Navbar = () => {
+  const intl = useIntl();
   return ( 
     <ul className="f-header__list flex-grow flex-basis-0 justify-center@md">
-      <li className="f-header__item"><Link to="/" className="f-header__link" activeClassName="active">Home</Link></li>
-      <li className="f-header__item"><Link href="#0" className="f-header__link" activeClassName="active">News</Link></li>
-      <li className="f-header__item"><Link href="/about" className="f-header__link" activeClassName="active">About us</Link></li>
-      <li className="f-header__item"><Link href="/contact" className="f-header__link" activeClassName="active">Contact</Link></li>
+      <li className="f-header__item"><Link to="/" className="f-header__link" activeClassName="active">{intl.formatMessage({ id: "home" })}</Link></li>
+      <li className="f-header__item"><Link to="/news" className="f-header__link" activeClassName="active">{intl.formatMessage({ id: "news" })}</Link></li>
+      <li className="f-header__item"><Link to="/about" className="f-header__link" activeClassName="active">{intl.formatMessage({ id: "aboutus" })}</Link></li>
+      <li className="f-header__item"><Link to="/contact" className="f-header__link" activeClassName="active">{intl.formatMessage({ id: "contact" })}</Link></li>
     </ul>
    );
 }

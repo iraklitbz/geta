@@ -11,8 +11,8 @@ const Headline3D = () => {
   
         <a className="td-text-block font-secondary" href="#0" aria-label="Join our club">
           <span className="td-text-block__wrapper">
-            <em className="td-text-block__front-text">Join Our Club &rarr;</em>
-            <em className="td-text-block__final-text">Join Our Club &rarr;</em>
+            <em className="td-text-block__front-text">Who we are &rarr;</em>
+            <em className="td-text-block__final-text">Who we are &rarr;</em>
           </span>
         </a>
       </div>

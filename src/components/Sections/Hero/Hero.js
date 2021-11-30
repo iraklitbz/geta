@@ -23,8 +23,8 @@ const Hero = () => {
           <svg className="bg-decoration-v3__svg top-0 left-50% -translate-x-50% color-contrast-higher opacity-10%" viewBox="0 0 1920 500">
             <defs>  
               <linearGradient id="bg-dec-v3-gradient-2" gradientTransform="rotate(90)">  
-                <stop offset="0" stop-color="white" stop-opacity="1" />  
-                <stop offset="1" stop-color="white" stop-opacity="0" />  
+                <stop offset="0" stopColor="white" stopOpacity="1" />  
+                <stop offset="1" stopColor="white" stopOpacity="0" />  
               </linearGradient>
             
               <mask id="bg-dec-v3-gradient-mask-2">  
@@ -32,7 +32,7 @@ const Hero = () => {
               </mask>  
             </defs>
       
-            <g fill="none" stroke="currentColor" stroke-miterlimit="10" mask="url(#bg-dec-v3-gradient-mask-2)">
+            <g fill="none" stroke="currentColor" strokeMiterlimit="10" mask="url(#bg-dec-v3-gradient-mask-2)">
               <circle cx="960" cy="234" r="254" />
               <circle cx="960" cy="190.545" r="277.818" />
               <circle cx="960" cy="147.091" r="301.636" />

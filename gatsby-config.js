@@ -38,15 +38,15 @@ module.exports = {
         // Default site language
         defaultLanguage: `en`,
         // Redirects to `/pt` in the route `/`
-        redirect: false,
+        redirect: true,
       },
     },
     {
       resolve: `gatsby-source-strapi`,
       options: {
-        apiURL: `http://localhost:1337`,
+        apiURL: `https://geta-server.herokuapp.com`,
         queryLimit: 1000, // Defaults to 100
-        collectionTypes: [`Blog`]
+        collectionTypes: [`Blog`, `Ge`]
       },
     },
     {

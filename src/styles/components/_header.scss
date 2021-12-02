@@ -563,3 +563,19 @@ html:not(.js) {
 .hide-nav--off-canvas { // main header is off-canvas
   // add off-canvas custom style (if any)
 }
+
+.lang-list {
+  margin-right: var(--space-md);
+  li {
+    a {
+      padding: var(--space-xxxs) var(--space-xxs);
+      font-size: 1.125rem;
+      align-items: center;
+      color: var(--color-contrast-high);
+      text-decoration: none;
+      &:hover {
+        color: var(--color-primary);
+      }
+    }
+  }
+}

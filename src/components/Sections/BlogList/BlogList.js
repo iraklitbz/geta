@@ -1,8 +1,7 @@
 import React from "react";
 import Pagination from "../Pagination/Pagination";
-import { Link } from 'gatsby';
+import { Link } from "gatsby-plugin-intl";
 const BlogList = ({posts, pageContext}) => {
-  console.log(posts)
   return ( 
     <section className="position-relative z-index-1 padding-y-xl">
       <div className="articles-v2">

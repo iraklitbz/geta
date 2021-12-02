@@ -2,8 +2,9 @@ import React from "react";
 import { useEffect } from "react";
 import {useStaticQuery, graphql} from 'gatsby';
 import revelarJS from "../../../../static/js/revelarJS";
-import { Link } from "gatsby";
+import { useIntl, Link } from "gatsby-plugin-intl";
 const BlogHome = () => {
+  const intl = useIntl();
   const result = useStaticQuery(graphql`
       query getPost {
         allStrapiBlog(
@@ -22,9 +23,30 @@ const BlogHome = () => {
             }
           }
         }
+        allStrapiGe(
+          limit: 4 
+          sort: {fields:createdAt, order: DESC}) 
+          {
+          nodes {
+            id
+            title
+            url
+            description
+            thumb {
+              localFile {
+                publicURL
+              }
+            }
+          }
+        }
       }
   `);
-  const newsList = result.allStrapiBlog.nodes;
+  let newsList = {};
+  if(intl.locale === 'en') {
+    newsList = result.allStrapiBlog.nodes;
+  } else if(intl.locale === 'ge') {
+    newsList = result.allStrapiGe.nodes;
+  }
   useEffect(() => {
     revelarJS();
   },[])

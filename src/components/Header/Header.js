@@ -37,12 +37,12 @@ const Header = () => {
           
           <Navbar />
           <div className="flex flex-grow flex-basis-0 justify-end@md">
-            <ul className="f-header__list ">
+            <ul className="f-header__list lang-list">
                 <li>
-                  <Link to="/">EN</Link>
+                  <Link className="f-header__link" activeClassName="active" to="/">en</Link>
                 </li>
                 <li>
-                  <Link to="/ge">GE</Link>
+                  <Link className="f-header__link" activeClassName="active" to="/ge">ქა</Link>
                 </li>
             </ul>
             <ul className="f-header__list justify-end@md">

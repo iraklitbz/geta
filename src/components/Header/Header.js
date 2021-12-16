@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import headerJS from "../../../static/js/header";
 import Navbar from "./Navbar";
 import { Link } from "gatsby";
+import Language from "../Language";
 const Header = () => {
   useEffect(() => {
     headerJS();
@@ -37,14 +38,7 @@ const Header = () => {
           
           <Navbar />
           <div className="flex flex-grow flex-basis-0 justify-end@md">
-            <ul className="f-header__list lang-list">
-                <li>
-                  <Link className="f-header__link" activeClassName="active" to="/">en</Link>
-                </li>
-                <li>
-                  <Link className="f-header__link" activeClassName="active" to="/ge">ქა</Link>
-                </li>
-            </ul>
+            <Language />
             <ul className="f-header__list justify-end@md">
               <li className="f-header__item">
                 <a href="#0" className="f-header__link f-header__link--icon" aria-label="Follow us on Twitter">

@@ -22,7 +22,9 @@
   background-color: var(--color-contrast-lower);
   background-size: cover;
   background-repeat: no-repeat;
-
+  h2 {
+    font-weight: bold;
+  }
   &:hover {
     .card-v11__btn {
       background-color: var(--color-bg);

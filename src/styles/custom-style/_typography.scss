@@ -1,5 +1,6 @@
 @use '../base' as *;
-
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Georgian:wght@100;400;600;800&display=swap');
 // --------------------------------
 
 // (START) Global editor code https://codyhouse.co/ds/globals/typography
@@ -8,7 +9,7 @@
 
 :root {
   // font family
-  --font-primary: Inter, system-ui, sans-serif;
+  
 
   // font size
   --text-base-size: 1em; // body font-size

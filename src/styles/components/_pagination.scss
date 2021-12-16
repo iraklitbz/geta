@@ -108,6 +108,7 @@
     background-size: 0% 100%;
     will-change: background-size;
     transition: background-size .3s var(--ease-in-out);
+    font-weight: bold;
 
     &:hover {
       background-size: 100% 100%;

@@ -1,9 +1,11 @@
 import React from "react";
 import Headline3D from "../Headline3D/Headline3D";
+import bk from './../../../images/wine.jpg'
 const Hero = () => {
   return ( 
     <section className="position-relative z-index-1 padding-top-header padding-bottom-xl" data-theme="dark">
-        <div className="container max-width-xl position-relative z-index-2">
+        <div className="container max-width-xl position-relative z-index-2 hero-background">
+        
           <div className="radius-md padding-top-xxxxl padding-x-sm padding-bottom-sm shadow-lg">
             <div className="grid justify-end@sm">
               <div className="col-6@sm col-4@lg">
@@ -12,10 +14,7 @@ const Hero = () => {
               </div>
             </div>
           
-            <div className="video-feature__video-wrapper" aria-hidden="true">
-              
-             
-            </div>
+            
           </div>
         </div>
 

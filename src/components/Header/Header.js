@@ -2,7 +2,6 @@ import React from "react";
 import { useEffect } from "react";
 import headerJS from "../../../static/js/header";
 import Navbar from "./Navbar";
-import { Link } from "gatsby";
 import Language from "../Language";
 const Header = () => {
   useEffect(() => {

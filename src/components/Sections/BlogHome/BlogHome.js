@@ -54,15 +54,15 @@ const BlogHome = () => {
     <section className="position-relative z-index-1 padding-y-xl">
         <div className="container max-width-xl">
           <div className="grid gap-md items-start@md">
-            <div className="col-4@md position-sticky@md top-md@md">
+            <div className="col-4@md position-sticky@md top-xl@md">
               <div className="text-component v-space-sm">
-                <h1>Our last news</h1>
-                <p className="color-contrast-medium">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia nostrum, saepe enim amet.</p>
+                <h1>Noticias actuales</h1>
+                <p className="color-contrast-medium">Sigue nuestras noticias más actuales</p>
                 <p>
-                  <a className="link-fx-3 color-contrast-higher" href="timetable.html">
-                    <span>View Timetable</span>
+                  <Link className="link-fx-3 color-contrast-higher" to="/news">
+                    <span>Ver todas las noticias</span>
                     <svg className="icon" viewBox="0 0 12 12" aria-hidden="true" fill="none" stroke="currentColor" strokeLinecap="round" strokeLinejoin="round"><line x1="9" y1="6" x2="3.5" y2="11.5"/><line x1="3.5" y1="0.5" x2="9" y2="6"/></svg>
-                  </a>
+                  </Link>
                 </p>
               </div>
             </div>

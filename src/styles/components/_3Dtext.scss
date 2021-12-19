@@ -161,3 +161,17 @@
     }
   }
 }
+
+.hero-background {
+  position: relative;
+  background-image: url('./../images/wine.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  opacity: 0.2s;
+  img {
+    position: absolute;
+    left: 0;
+    top: 0
+  }
+}

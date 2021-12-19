@@ -13,7 +13,7 @@ const List = () => {
         
             <div className="list-v2__content">
               <div className="text-component">
-                <p className="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio voluptatum rerum repudiandae nobis quae, autem minima eius doloribus recusandae minus?</p>
+                <p className="color-contrast-medium">Es importante destacar que la red de socios de GETA es grande desde el inicio. Tenemos ya planeado firmar convenios de cooperación con estructuras estatales y empresas privadas. Por un lado tenemos grandes empresas e instituciones educativas y por el otro lado, pequeñas y medianas bodegas familiares y hoteles.</p>
               </div>
             </div>
           </li>
@@ -27,8 +27,8 @@ const List = () => {
         
             <div className="list-v2__content">
               <div className="text-component">
-                <p className="color-contrast-medium">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita eum tempora maxime, praesentium veritatis consectetur quia laudantium pariatur.</p>
-                <p className="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente unde explicabo natus consequuntur laborum dolores, asperiores sint, eveniet deserunt porro illum aut ab earum non ducimus, cumque nam qui minima itaque ipsam ad esse. Atque architecto molestiae assumenda inventore dignissimos.</p>
+                <p className="color-contrast-medium">GETA recibió su forma juridica el 22 de marzo de 2021, y a través de tramites acelerados con la participación activa de nuestros socios europeos, ya ha logrado registrarse como miembro oficial de la Asociación Mundial de Enoturismo, lo que es una nueva oportunidad no solo para nosotros sino  también para Georgia.</p>
+              
               </div>
             </div>
           </li>
@@ -36,13 +36,13 @@ const List = () => {
           <li>
             <div className="margin-bottom-xs">
               <h4 className="list-v2__title font-primary">
-                <div className="list-v2__bullet"></div>Global Editors
+                <div className="list-v2__bullet"></div>El equipo de GETA
               </h4>
             </div>
         
             <div className="list-v2__content">
               <div className="text-component">
-                <p className="color-contrast-medium">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt natus totam deleniti corporis cupiditate non aperiam adipisci quasi repellendus possimus.</p>
+                <p className="color-contrast-medium">Tiene una amplia experiencia en gestión de negocios internacionales, finanzas, turismo, viticultura, asociaciones público-privadas, administración pública, monitoreo y evaluación.</p>
               </div>
             </div>
           </li>

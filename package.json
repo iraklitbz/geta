@@ -8,7 +8,7 @@
     "@emotion/react": "^11.7.1",
     "@emotion/styled": "^11.6.0",
     "add": "^2.0.6",
-    "autoprefixer": "^10.4.0",
+    "autoprefixer": "^10.4.1",
     "codyhouse-framework": "^3.0.3",
     "gatsby": "^3.14.6",
     "gatsby-awesome-pagination": "^0.3.8",
